@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 const Navbar = () => {
   // Daftar link navbar
   const navLinks = [
-    { name: 'Home', to: '/' },
+    { name: 'first', to: '/' },
+    { name: 'second', to: '/second' },
     // Anda bisa menambah link lainnya di sini
   ];
 
