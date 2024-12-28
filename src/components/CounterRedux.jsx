@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment, reset } from "../redux/features/counterSlice";
+import { decrement, increment, reset } from "../lib/redux/features/counterSlice";
 import { Button } from "@mui/material";
 
-const Counter = () => {
+const CounterRedux = () => {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
 
@@ -17,4 +17,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default CounterRedux;

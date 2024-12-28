@@ -1,26 +1,31 @@
-import React from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
-  background-color: ${(props) => (props.primary ? "#4caf50" : "#f44336")};
+const StyledButton = styled.button.withConfig({
+  shouldForwardProp: (prop) => prop !== "primary",
+})`
+  background: ${({ primary }) => (primary ? "blue" : "red")};
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  margin: 5px;
 
   &:hover {
-    background-color: ${(props) => (props.primary ? "#45a049" : "#d32f2f")};
+    background: ${({ primary }) => (primary ? "darkblue" : "darkred")};
   }
 `;
 
-const StyledButton = () => (
-  <div>
-    <Button primary>Primary Button</Button>
-    <Button>Secondary Button</Button>
-  </div>
-);
+const App = () => {
+  return (
+    <div>
+      <StyledButton primary={true} onClick={() => alert("Primary Button")}>
+        Primary Button
+      </StyledButton>
+      <StyledButton primary={false} onClick={() => alert("Secondary Button")}>
+        Secondary Button
+      </StyledButton>
+    </div>
+  );
+};
 
-export default StyledButton;
+export default App;

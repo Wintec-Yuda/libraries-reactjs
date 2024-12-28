@@ -1,28 +1,51 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
+  // Daftar link navbar
+  const navLinks = [
+    { name: 'Home', to: '/' },
+    // Anda bisa menambah link lainnya di sini
+  ];
+
+  // Animasi untuk tombol navbar dan menu saat dimuat
+  const buttonVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+  };
+
   return (
     <>
-      <nav className="bg-blue-600 p-4 shadow-md">
+      <nav className="bg-gradient-to-r from-blue-500 to-indigo-600 p-4 shadow-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-white text-xl font-semibold">
-            <a href="/">MyLogo</a>
-          </div>
-
           <div className="flex space-x-6">
-            <a href="/" className="text-white hover:bg-blue-700 px-4 py-2 rounded-md">Home</a>
-            <a href="/about" className="text-white hover:bg-blue-700 px-4 py-2 rounded-md">About</a>
-            <a href="/services" className="text-white hover:bg-blue-700 px-4 py-2 rounded-md">Services</a>
-            <a href="/contact" className="text-white hover:bg-blue-700 px-4 py-2 rounded-md">Contact</a>
+            {/* Render link-link navbar secara dinamis */}
+            {navLinks.map((link) => (
+              <motion.div 
+                key={link.name}
+                initial="hidden" 
+                animate="visible" 
+                variants={buttonVariants}
+              >
+                <Link 
+                  to={link.to} 
+                  className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105"
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </nav>
-      <main>
+
+      {/* Menampilkan konten halaman yang terhubung dengan routing */}
+      <main className="bg-gray-100 min-h-screen">
         <Outlet />
       </main>
     </>
   );
-}
+};
 
 export default Navbar;
