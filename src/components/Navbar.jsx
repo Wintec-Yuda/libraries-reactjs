@@ -7,6 +7,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'first', to: '/' },
     { name: 'second', to: '/second' },
+    { name: 'third', to: '/third' },
     // Anda bisa menambah link lainnya di sini
   ];
 

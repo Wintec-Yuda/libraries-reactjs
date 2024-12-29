@@ -4,7 +4,7 @@ Dokumen ini memberikan daftar pustaka React yang populer beserta fungsi utamanya
 
 | Pustaka                  | Fungsi                                                                  | Implementasi |
 |--------------------------|-------------------------------------------------------------------------|--------------|
-| **React Router**          | Memungkinkan navigasi dan routing antar tampilan dalam aplikasi React. | [v]          |
+| **React Router DOM**          | Memungkinkan navigasi dan routing antar tampilan dalam aplikasi React. | [v]          |
 | **Redux**                 | Pustaka manajemen state untuk mengelola dan memusatkan state aplikasi. | [v]          |
 | **Redux Toolkit**         | Menyederhanakan pengembangan Redux dengan utilitas untuk konfigurasi store dan reducer. | [v]          |
 | **Axios**                 | Klien HTTP untuk membuat permintaan ke API dan menangani respons.     | [v]          |
@@ -28,6 +28,19 @@ Dokumen ini memberikan daftar pustaka React yang populer beserta fungsi utamanya
 | **React Select**          | Pustaka select/dropdown yang dapat disesuaikan dengan fitur lanjutan.  | [v]          |
 | **React Infinite Scroller** | Fungsionalitas infinite scrolling untuk memuat konten secara dinamis. | [v]          |
 | **React-i18next**         | Pustaka internasionalisasi (i18n) untuk aplikasi React multibahasa.   | [v]          |
-| **Recharts**              | Pustaka untuk membuat grafik dan diagram dalam aplikasi React.        | [ ]          |
+| **Recharts**              | Pustaka untuk membuat grafik dan diagram dalam aplikasi React.        | [v]          |
+| **React Toastify**        | Menyediakan pemberitahuan toast yang dapat disesuaikan untuk aplikasi React. | [v]          |
+| **React Modal**           | Komponen modal untuk menampilkan popup dalam aplikasi React.           | [v]          |
+| **React Dropzone**        | Memudahkan pengelolaan file upload melalui drag-and-drop.              | [v]          |
+| **React Image**           | Menyederhanakan penggunaan gambar dalam aplikasi React dengan fitur optimasi dan lazy loading. | [v]          |
+| **React JS Cookie**       | Memudahkan pengelolaan cookie dalam aplikasi React.                    | [v]          |
+| **React Content Loader**  | Membuat skeleton loaders untuk meningkatkan UX saat konten dimuat.     | [v]          |
+| **React Copy to Clipboard** | Memudahkan menyalin teks ke clipboard.                               | [v]          |
+| **React Icons**           | Menyediakan berbagai ikon untuk digunakan dalam aplikasi React.       | [v]          |
+| **React Lazy Load**       | Implementasi lazy loading untuk gambar dan elemen dalam React.         | [v]          |
+| **React Color**           | Komponen color picker untuk aplikasi React.                           | [v]          |
+| **React Signature Canvas**| Komponen untuk membuat dan menyimpan tanda tangan (signature) di aplikasi React. | [v]          |
+| **React Sticky**          | Membuat elemen tetap "lengket" saat menggulir halaman.                | [v]          |
+
 
 Anda dapat mengeksplorasi dan menggunakan pustaka-pustaka ini sesuai dengan kebutuhan proyek Anda.

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ReactTableComponent, Chart, ReactSpring, ThreeJS, ReactSelect, InfiniteScrollComponent, LanguageSwitcherComponent, Rechart } from '../components';
+import { ReactTableComponent, Chart, ReactSpring, ThreeJS, ReactSelect, InfiniteScrollComponent, LanguageSwitcherComponent, Rechart, ReactToastify } from '../components';
 
 // Data fitur (misal ada komponen untuk AntDesign)
 const FEATURES = [

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { FirstLibraries, SecondLibraries } from './pages';
+import { FirstLibraries, SecondLibraries, ThirdLibraries } from './pages';
 import { Navbar } from './components';
 
 const App = () => {
@@ -10,6 +10,7 @@ const App = () => {
         <Route element={<Navbar />}>
           <Route path="/" element={<FirstLibraries />} />
           <Route path="/second" element={<SecondLibraries />} />
+          <Route path="/third" element={<ThirdLibraries />} />
         </Route>
       </Routes>
     </BrowserRouter>
